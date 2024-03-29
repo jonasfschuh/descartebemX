@@ -1,5 +1,4 @@
 import 'package:firebase_auth/firebase_auth.dart';
-//import 'package:flutter_aula1/models/time.dart';
 import 'package:get/get.dart';
 
 class AuthService extends GetxController {
