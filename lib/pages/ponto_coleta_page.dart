@@ -107,6 +107,11 @@ class _PontoColetaPageState extends State<PontoColetaPage> {
   }
 
   Widget materiais() {
-    return Scaffold();
+    return ListView(
+      padding: const EdgeInsets.all(8),
+      children: <Widget>[
+        ListTile(title: Text(pontoColeta['material'] ?? '')),
+      ],
+    );
   }
 }

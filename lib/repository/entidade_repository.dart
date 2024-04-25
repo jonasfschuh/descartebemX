@@ -9,6 +9,7 @@ class EntidadeRepository extends ChangeNotifier {
   //final List<PontoColeta> _pontoscoleta = [];
   late DatabaseReference _dbRef;
   late List _entidadesItemList = [];
+  late List _entidadesList = [];
   late Map<String, dynamic> _entidades;
 
   DatabaseReference get dbRef => _dbRef;
@@ -34,10 +35,36 @@ class EntidadeRepository extends ChangeNotifier {
     await loadData();
   }
 
+  Future<void> inserir(Map<String, String> entidade) async {
+    DatabaseReference newChildRef = dbRef.push();
+    String key = newChildRef.key as String;
+    dbRef.child(key).update(entidade);
+
+    _entidades[key] = entidade;
+    _entidades = Utils.addKeyIntoMapValue(_entidades);
+    notifyListeners();
+  }
+
+  Future<void> alterar(String key, Map<String, String> entidade) async {
+    await dbRef.child(key).update(entidade);
+    _entidades[key] = entidade;
+    _entidades = Utils.addKeyIntoMapValue(_entidades);
+    notifyListeners();
+  }
+
+  Future<void> remover(String key) async {
+    await dbRef.child(key).remove();
+    _entidades.remove(key);
+
+    notifyListeners();
+  }
+
   loadData() async {
     if (Utils.onLineMode) {
       DataSnapshot snapshot = await dbRef.get();
       _entidades = Map<String, dynamic>.from(snapshot.value as Map);
+      _entidades = Utils.addKeyIntoMapValue(_entidades);
+      _entidadesList = _entidades.values.toList();
     } else {
       _entidades = getEntidadesMock();
     }

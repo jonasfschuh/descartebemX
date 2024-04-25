@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
+import '../pages/entidades_page.dart';
+import '../pages/sobre_page.dart';
 import '../services/auth_service.dart';
 
 class Menu extends StatelessWidget {
@@ -34,6 +37,16 @@ class Menu extends StatelessWidget {
                   title: Text('Entidades'),
                   onTap: () {
                     Navigator.of(context).pop();
+                    Get.to(() => EntidadesPage());
+                  },
+                ),
+                Divider(),
+                ListTile(
+                  leading: Icon(Icons.info),
+                  title: Text('Sobre'),
+                  onTap: () {
+                    Navigator.pop(context);
+                    Get.to(() => SobrePage());
                   },
                 ),
                 Divider(),
