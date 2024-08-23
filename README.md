@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Authentication API
 
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
@@ -99,3 +100,12 @@ MySQL table products
 
 MySQL table users
 ![MySQL users](https://github.com/kenzor1979/auth-api/blob/main/img/MySQLusers.png?raw=true&sanitize=true)
+=======
+# DescarteBem
+
+Aplicativo para auxiliar a comunidade de cidadãos e entidades na correta destinação de materiais recicláveis.
+
+FURB - Fundação Universidade Regional de Blumenau 2024/1
+Projeto de Software II
+Blumenau / Santa Catarina
+>>>>>>> a784d10f7b1bbec259110da8bc7752e8f213d4dc
