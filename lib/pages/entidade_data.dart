@@ -56,7 +56,7 @@ class _EntidadeDataState extends State<EntidadeData> {
     Navigator.pop(context);
 
     ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text('Salvo com sucesso!')),
+      SnackBar(content: Text('Entidade salva com sucesso!')),
     );
   }
 
@@ -96,12 +96,12 @@ class _EntidadeDataState extends State<EntidadeData> {
   Widget build(BuildContext context) {
     String titulo = '';
     if (widget.isBrowse) {
-      titulo = 'Consulta';
+      titulo = 'Consulta entidade';
     } else {
       if (widget.isInserting) {
-        titulo = 'Inserir dados';
+        titulo = 'Inserir entidade';
       } else {
-        titulo = 'Alterar dados';
+        titulo = 'Alterar entidade';
       }
     }
 

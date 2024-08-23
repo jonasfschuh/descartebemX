@@ -3,6 +3,7 @@ import 'package:navigationrail2/repository/entidade_repository.dart';
 import 'package:navigationrail2/repository/ponto_coleta_repository.dart';
 import 'package:provider/provider.dart';
 
+import '../repository/material_repository.dart';
 import '../utils/utils.dart';
 
 // ignore: must_be_immutable
@@ -34,10 +35,13 @@ class _PontoColetaDataState extends State<PontoColetaData> {
   final materialController = TextEditingController();
 
   String selectedValue = "0";
+  String selectedMaterialValue = "0";
   List entidadesItemList = [];
+  List materiaisItemList = [];
   Map entidades = EntidadeRepository.getEntidadesMock();
   bool isAtivo = false;
 
+  late MaterialRepository materialRepository;
   late EntidadeRepository entidadeRepository;
   late PontoColetaRepository pontoColetaRepository;
 
@@ -52,7 +56,9 @@ class _PontoColetaDataState extends State<PontoColetaData> {
       'logotipo': logotipoController.text,
       'datainclusao': dataInclusaoController.text,
       'ativo': ativoController.text,
-      'material': materialController.text
+      'material':
+          materialRepository.getNomeMaterialByKey(selectedMaterialValue),
+      'material2': selectedMaterialValue,
     };
 
     if (widget.isInserting) {
@@ -64,7 +70,7 @@ class _PontoColetaDataState extends State<PontoColetaData> {
     Navigator.pop(context);
 
     ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text('Salvo com sucesso!')),
+      SnackBar(content: Text('Ponto de coleta salvo com sucesso!')),
     );
   }
 
@@ -75,6 +81,7 @@ class _PontoColetaDataState extends State<PontoColetaData> {
 
   @override
   void didChangeDependencies() {
+    materialRepository = Provider.of<MaterialRepository>(context);
     entidadeRepository = Provider.of<EntidadeRepository>(context);
     pontoColetaRepository = Provider.of<PontoColetaRepository>(context);
     if (!widget.isInserting) {
@@ -95,12 +102,13 @@ class _PontoColetaDataState extends State<PontoColetaData> {
     dataAlteracaoController.text = pontoColeta['dataalteracao'] ?? '';
     logotipoController.text = pontoColeta['logotipo'] ?? '';
     dataInclusaoController.text = pontoColeta['datainclusao'] ?? '';
-    ativoController.text = pontoColeta['ativo'] ?? 'Não';
+    ativoController.text = pontoColeta['ativo'];
     isAtivo = ativoController.text == 'Sim';
     materialController.text = pontoColeta['material'] ?? '';
 
     if (!widget.isInserting) {
       selectedValue = pontoColeta['entidade2'];
+      selectedMaterialValue = pontoColeta['material2'];
       setState(() {});
     }
   }
@@ -109,12 +117,12 @@ class _PontoColetaDataState extends State<PontoColetaData> {
   Widget build(BuildContext context) {
     String titulo = '';
     if (widget.isBrowse) {
-      titulo = 'Consulta';
+      titulo = 'Consulta ponto coleta';
     } else {
       if (widget.isInserting) {
-        titulo = 'Inserir dados';
+        titulo = 'Inserir ponto coleta';
       } else {
-        titulo = 'Alterar dados';
+        titulo = 'Alterar ponto coleta';
       }
     }
 
@@ -215,6 +223,33 @@ class _PontoColetaDataState extends State<PontoColetaData> {
                   ),
                 ),
               ),
+              // materiais quyron
+              Padding(
+                padding: EdgeInsets.symmetric(vertical: 12, horizontal: 24),
+                child: AbsorbPointer(
+                  absorbing: widget.isBrowse,
+                  child: DropdownButtonFormField(
+                    isExpanded: true,
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Material',
+                    ),
+                    value: selectedMaterialValue,
+                    items: materialRepository.materiaisItemList.map((material) {
+                      return DropdownMenuItem(
+                        value: material['id'],
+                        child: Text(material['label']),
+                      );
+                    }).toList(),
+                    onChanged: (v) {
+                      selectedMaterialValue = v as String;
+                      //materialController.text = selectedMaterialValue;
+                      setState(() {});
+                    },
+                  ),
+                ),
+              ),
+              /* ajuste materiais quyron             
               Padding(
                 padding: EdgeInsets.symmetric(vertical: 12, horizontal: 24),
                 child: TextFormField(
@@ -232,6 +267,7 @@ class _PontoColetaDataState extends State<PontoColetaData> {
                   },
                 ),
               ),
+              */ // fim de ajuste de materiais quyron
               Padding(
                 padding: EdgeInsets.symmetric(vertical: 12, horizontal: 24),
                 child: TextFormField(
@@ -239,7 +275,7 @@ class _PontoColetaDataState extends State<PontoColetaData> {
                   controller: logotipoController,
                   decoration: InputDecoration(
                     border: OutlineInputBorder(),
-                    labelText: 'Logotipo',
+                    labelText: 'URL do Logotipo (opcional)',
                   ),
                   validator: (value) {
                     return null;

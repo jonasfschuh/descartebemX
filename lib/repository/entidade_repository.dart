@@ -9,6 +9,7 @@ class EntidadeRepository extends ChangeNotifier {
   //final List<PontoColeta> _pontoscoleta = [];
   late DatabaseReference _dbRef;
   late List _entidadesItemList = [];
+  // ignore: unused_field
   late List _entidadesList = [];
   late Map<String, dynamic> _entidades;
 

@@ -1,0 +1,335 @@
+{
+  "PontoColeta": {
+    "-NtaL9afl6y6fxm8kZJW": {
+      "-Ntc3wlMUpZHVcKC3O1o": [
+        {
+          "nome": "Lampadas1"
+        },
+        {
+          "nome": "Pilhas1"
+        }
+      ],
+      "ativo": "Não",
+      "bairro": "Victor Konder",
+      "dataalteracao": "28-03-2024 01:06",
+      "datainclusao": "",
+      "endereco": "Rua Antônio da Veiga, 101",
+      "entidade": "Fundação Universidade Regional de Blumenau",
+      "entidade2": "-NsX0wrNLe19kPdtLrXv",
+      "logotipo": "https://www.furb.br/_upl/files/multimidia/furb_universidade%20de%20Blumenau_policromia.jpg",
+      "materiais": {
+        "0": {
+          "nome": "Lampadas"
+        },
+        "1": {
+          "nome": "Pilhas"
+        },
+        "2": {
+          "nome": "Baterias"
+        },
+        "-Ntc3hEDBvqMqV6GkPNR": [
+          {
+            "nome": "Lampadas"
+          },
+          {
+            "nome": "Pilhas"
+          }
+        ]
+      },
+      "material": "Baterias",
+      "nome": "Bloco B",
+      "status": "Ativo"
+    },
+    "-NtaLdvYGEZ0Qlw6HUQ3": {
+      "ativo": "Sim",
+      "bairro": "Victor Konder",
+      "dataalteracao": "10-06-2024 18:19",
+      "datainclusao": "",
+      "endereco": "Avenida São Paulo, 2501",
+      "entidade": "Giassi Supermercados 3",
+      "entidade2": "-NsX7Mb3xTHPZZrAStAt",
+      "logotipo": "https://institucional.giassi.com.br/img/facebook.jpg",
+      "materiais": [
+        {
+          "nome": "Lampadas"
+        },
+        {
+          "nome": "Pilhas"
+        },
+        {
+          "nome": "Baterias"
+        }
+      ],
+      "material": "Pneu",
+      "material2": "-O-23gZCrJwfeIxKTmm7",
+      "nome": "Bloco Bc",
+      "status": "Ativo"
+    },
+    "-NtaLoCvx-pF3AZ7JnOe": {
+      "ativo": "Sim",
+      "bairro": "Vila nova",
+      "dataalteracao": "10-06-2024 18:20",
+      "datainclusao": "28-03-2024 24:50",
+      "endereco": "Rua Benjamin Constant, 2480",
+      "entidade": "Cooper Vila Nova",
+      "entidade2": "-NsX7TjvNXZjqVeWR9a1",
+      "logotipo": "https://www.cooper.coop.br/image/13823/550/0/novos-horarios-de-atendimento-da-cooper.jpg",
+      "materiais": [
+        {
+          "nome": "Lampadas"
+        },
+        {
+          "nome": "Pilhas"
+        },
+        {
+          "nome": "Baterias"
+        }
+      ],
+      "material": "Baterias",
+      "material2": "-O-2AHmV2xR2xNqOMq9q",
+      "nome": "Primeiro andar",
+      "status": "Ativo"
+    },
+    "-Nu-ANZwgEe8bpvhjSHu": {
+      "ativo": "Sim",
+      "bairro": "Velha",
+      "dataalteracao": "28-03-2024 02:00",
+      "datainclusao": "",
+      "endereco": "Rua dos Caçadores",
+      "entidade": "Cooper Velha",
+      "entidade2": "-NsX7QLeVz84Yglmey8N",
+      "logotipo": "https://www.timbonet.com.br/wp-content/uploads/2023/12/BLUMOB.jpg",
+      "material": "Baterias",
+      "nome": "Terminal Velha"
+    },
+    "-Nu1roLG2OCCxOM_yhOD": {
+      "ativo": "Sim",
+      "bairro": "Ponta Aguda",
+      "dataalteracao": "25-04-2024 12:09",
+      "datainclusao": "27-03-2024 23:23",
+      "endereco": "Rua Paraguay, 1000",
+      "entidade": "Fundação Universidade Regional de Blumenau",
+      "entidade2": "-NsX0wrNLe19kPdtLrXv",
+      "logotipo": "",
+      "material": "Baterias",
+      "nome": "Moradores Ponta Aguda"
+    },
+    "-NxPW8sf4fFM22bTbyN6": {
+      "ativo": "Sim",
+      "bairro": "Gaspar",
+      "dataalteracao": "10-06-2024 17:21",
+      "datainclusao": "08-05-2024 20:22",
+      "endereco": "Rua Belem",
+      "entidade": "Cooper Vila Nova",
+      "entidade2": "-NsX7TjvNXZjqVeWR9a1",
+      "logotipo": "",
+      "material": "Lampadas",
+      "material2": "-NsWuX9Uy855Zs-B3qd8",
+      "nome": "Teste"
+    },
+    "-O-2FMjNXioT9H5_NK1R": {
+      "ativo": "Sim",
+      "bairro": "Vila Real",
+      "dataalteracao": "10-06-2024 17:45",
+      "datainclusao": "10-06-2024 17:45",
+      "endereco": "Rua das flores, 200",
+      "entidade": "Gaspar 2",
+      "entidade2": "-NxPWNPSBscnSBPFZZST",
+      "logotipo": "",
+      "material": "Pneu",
+      "material2": "-O-23gZCrJwfeIxKTmm7",
+      "nome": "PontoColeta"
+    },
+    "-O-3AYtzqAoU4_eSi9eT": {
+      "ativo": "Sim",
+      "bairro": "Centro",
+      "dataalteracao": "10-06-2024 19:04",
+      "datainclusao": "10-06-2024 19:03",
+      "endereco": "Rua Brasil",
+      "entidade": "Giassi Supermercados 3",
+      "entidade2": "-NsX7Mb3xTHPZZrAStAt",
+      "logotipo": "",
+      "material": "Pilhas",
+      "nome": "Giassi 3"
+    }
+  },
+  "denunciapontocoleta": {
+    "-NsWxoruRra49N_-JFN-": {
+      "data": "2019-07-22T16:00:04.8579075",
+      "observacoes": "Local impróprio para depositar lâmpadas.",
+      "pontoColeta": [
+        {
+          "cnpj": "11122233344",
+          "nome": "FURB"
+        }
+      ],
+      "usuarioDenuncia": [
+        {
+          "cpf": "11122233344",
+          "nome": "Jonas"
+        }
+      ]
+    }
+  },
+  "entidade": {
+    "-NsX0wrNLe19kPdtLrXv": {
+      "CNPJ": "01020150500",
+      "dataAlteracao": "28-03-2024 08:06",
+      "dataAtivacao": "28-03-2024 08:06",
+      "dataAtualizacao": "28-03-2024 08:06",
+      "dataRegistro": "28-03-2024 08:06",
+      "email": "furb@furb.br",
+      "endereco": "Rua Antonio da Veiga, 200",
+      "entidade": "FURB",
+      "nomeFantasia": "Fundação Universidade Regional de Blumenau",
+      "status": "Ativo",
+      "telefone": "47 3200 0000"
+    },
+    "-NsX7HrlHN5BUyvSg2Tc": {
+      "CNPJ": "01020150500",
+      "dataAlteracao": "28-03-2024 08:06",
+      "dataAtivacao": "28-03-2024 08:06",
+      "dataAtualizacao": "28-03-2024 08:06",
+      "dataRegistro": "28-03-2024 08:06",
+      "email": "furb@furb.br",
+      "endereco": "Avenida Beira Rio 5300",
+      "entidade": "ASPEF",
+      "nomeFantasia": "Prefeitura Municipal de Blumenau ",
+      "status": "Ativo",
+      "telefone": "47 3200 0000"
+    },
+    "-NsX7Mb3xTHPZZrAStAt": {
+      "CNPJ": "01020150500",
+      "dataAlteracao": "28-03-2024 08:06",
+      "dataAtivacao": "28-03-2024 08:06",
+      "dataAtualizacao": "28-03-2024 08:06",
+      "dataRegistro": "28-03-2024 08:06",
+      "email": "furb@furb.br",
+      "endereco": "Rua São Paulo, 2534",
+      "entidade": "GIAPREV",
+      "nomeFantasia": "Giassi Supermercados 3",
+      "status": "Ativo",
+      "telefone": "47 3200 0000"
+    },
+    "-NsX7QLeVz84Yglmey8N": {
+      "CNPJ": "01020150500",
+      "dataAlteracao": "28-03-2024 08:06",
+      "dataAtivacao": "28-03-2024 08:06",
+      "dataAtualizacao": "28-03-2024 08:06",
+      "dataRegistro": "28-03-2024 08:06",
+      "email": "furb@furb.br",
+      "endereco": "Rua dos Caçadores, 2454",
+      "entidade": "COPVEL",
+      "nomeFantasia": "Cooper Velha",
+      "status": "Ativo",
+      "telefone": "47 3200 0000"
+    },
+    "-NsX7TjvNXZjqVeWR9a1": {
+      "CNPJ": "01020150500",
+      "dataAlteracao": "10-06-2024 17:41",
+      "dataAtivacao": "28-03-2024 08:06",
+      "dataAtualizacao": "28-03-2024 08:06",
+      "dataRegistro": "28-03-2024 08:06",
+      "email": "furb@furb.br",
+      "endereco": "Rua Benjamin Constant, 2401",
+      "entidade": "COPVIL",
+      "entidade2": "0",
+      "nomeFantasia": "Cooper Vila Nova",
+      "status": "Ativo",
+      "telefone": "47 3200 0000"
+    },
+    "-O-2FD-jg0-6et80TzwC": {
+      "CNPJ": "213243454-0001;11",
+      "dataAlteracao": "10-06-2024 17:45",
+      "dataAtivacao": "10-06-2024 17:44",
+      "endereco": "Das Pedras, 2400",
+      "entidade2": "0",
+      "nomeFantasia": "GasparCenter",
+      "telefone": "47 99961 1000"
+    },
+    "-O-cUnqobbFL-cD7PR8w": {
+      "CNPJ": "727687950001/12",
+      "dataAlteracao": "17-06-2024 20:19",
+      "dataAtivacao": "17-06-2024 20:18",
+      "endereco": "Rua Belem",
+      "entidade2": "0",
+      "nomeFantasia": "Rede TOP",
+      "telefone": "4733328945"
+    },
+    "-O-cegIUAJfHgnomCu8W": {
+      "CNPJ": "70110000001/32",
+      "dataAlteracao": "17-06-2024 21:06",
+      "dataAtivacao": "17-06-2024 21:06",
+      "endereco": "Rua Prefeito L Schramm",
+      "entidade2": "0",
+      "nomeFantasia": "Rede Cooper Gaspar",
+      "telefone": "4733082000"
+    }
+  },
+  "material": {
+    "-NsWuUvb1fyw1HsExEg0": {
+      "ativo": "Sim",
+      "dataAlteracao": "10-06-2024 17:23",
+      "dataAtivacao": "",
+      "dataRegistro": "2019-07-22T16:00:04.8579075",
+      "nome": "Pilhas",
+      "usuarioAtivador": "sysadmin"
+    },
+    "-NsWuX9Uy855Zs-B3qd8": {
+      "ativo": "Sim",
+      "dataAlteracao": "10-06-2024 17:51",
+      "dataAtivacao": "",
+      "dataRegistro": "2019-07-22T16:00:04.8579075",
+      "nome": "Lampadas",
+      "usuarioAtivador": "sysadmin"
+    },
+    "-O-2AHmV2xR2xNqOMq9q": {
+      "ativo": "Não",
+      "dataAlteracao": "10-06-2024 17:23",
+      "dataAtivacao": "10-06-2024 17:23",
+      "nome": "Baterias",
+      "usuarioAtivador": ""
+    },
+    "-O-cUz3hYozUVD8eEGSd": {
+      "ativo": "Sim",
+      "dataAlteracao": "17-06-2024 20:19",
+      "dataAtivacao": "17-06-2024 20:19",
+      "nome": "Baterias Automotivas",
+      "usuarioAtivador": ""
+    },
+    "-O-ceq5Efbnb5gprAWM0": {
+      "ativo": "Sim",
+      "dataAlteracao": "17-06-2024 21:07",
+      "dataAtivacao": "17-06-2024 21:07",
+      "nome": "Pneu",
+      "usuarioAtivador": ""
+    }
+  },
+  "usuario": {
+    "-NsWz-orURwwBxrCqndj": {
+      "dataAlteracao": "2019-07-22T16:00:04.8579075",
+      "dataInclusao": "2019-07-22T16:00:04.8579075",
+      "nome": "Jonas Fernando Schuh"
+    },
+    "-NsWz2M-Liq1m5evZQ1i": {
+      "dataAlteracao": "2019-07-22T16:00:04.8579075",
+      "dataInclusao": "2019-07-22T16:00:04.8579075",
+      "nome": "Evandro Geliar Michels"
+    },
+    "-NsWz47PdD218Q2ptB48": {
+      "dataAlteracao": "2019-07-22T16:00:04.8579075",
+      "dataInclusao": "2019-07-22T16:00:04.8579075",
+      "nome": "Jonathan Antonio Modjeewski"
+    },
+    "-NsWz6L0OaLqmLWv7U3A": {
+      "dataAlteracao": "2019-07-22T16:00:04.8579075",
+      "dataInclusao": "2019-07-22T16:00:04.8579075",
+      "nome": "Felipe Soares "
+    },
+    "-NsWz8svwvYdgBmSL-dw": {
+      "dataAlteracao": "2019-07-22T16:00:04.8579075",
+      "dataInclusao": "2019-07-22T16:00:04.8579075",
+      "nome": "Maria Eugênia Schnaider"
+    }
+  }
+}

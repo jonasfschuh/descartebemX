@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:navigationrail2/pages/material_page.dart';
 
 import '../pages/entidades_page.dart';
 import '../pages/sobre_page.dart';
@@ -38,6 +39,14 @@ class Menu extends StatelessWidget {
                   onTap: () {
                     Navigator.of(context).pop();
                     Get.to(() => EntidadesPage());
+                  },
+                ),
+                ListTile(
+                  leading: Icon(Icons.store),
+                  title: Text('Materiais'),
+                  onTap: () {
+                    Navigator.of(context).pop();
+                    Get.to(() => MateriallPage());
                   },
                 ),
                 Divider(),
