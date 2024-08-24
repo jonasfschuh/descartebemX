@@ -1,25 +1,28 @@
-<<<<<<< HEAD
-# Authentication API
+# DescarteBemX
 
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
-![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
-![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
-![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)
-![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
+![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white)
+![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)
+![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
+![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
-This project is an API built using **Java, Java Spring, MySQL as the database, and Spring Security and JWT for authentication control.**
 
-The API demonstrate how to configure Authentication and Authorization in Spring application using Spring Security.
+This project is a prototype of a mobile application for the Android platform that works collaboratively to help the community dispose of environmentally sensitive materials.
+
+Developed with **Flutter and Google Firebase**
+
+Features:
+- Query collection points for sensitive materials using multiple keys
+- Insert, change, and delete data from collection points, materials, and receiving entities
+- User control with FirebaseAuth.
 
 ## Table of Contents
 
 - [Installation](#installation)
 - [Configuration](#configuration)
 - [Usage](#usage)
-- [API Endpoints](#api-endpoints)
 - [Authentication](#authentication)
-- [Database](#database)
 - [Contributing](#contributing)
 - [Screenshots](#screenshots)
 
@@ -28,49 +31,34 @@ The API demonstrate how to configure Authentication and Authorization in Spring 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/kenzor1979/auth-api.git
+git clone https://github.com/jonasfschuh/descartebemX
+```
+2. Install dependencies
+```
+flutter pub get
+```
+3. Create a [Google Firebase Firebase](https://firebase.google.com/) project of type "Realtime Database".
+Optional: Import database 
+```
+https://github.com/jonasfschuh/descartebemX/data/descartebem-default-rtdb-export.json
 ```
 
-2. Install dependencies with Maven
-
-3. Install [MySQL](https://www.mysql.com/)
+4. Register que app with FlutterFire
+In the command line or terminal, execute flutterfire and configure your firebase project to generate de google API keys.
+```
+flutterfire configure
+```
 
 ## Usage
 
-1. Start the application with Maven
-2. The API will be accessible at http://localhost:8080
+1. Start the application Visual Studio Code
+2. Launch an android emulator
+3. Start the android application
 
-## API Endpoints
-
-The API provides the following endpoints:
-
-```markdown
-GET /product - Retrieve a list of all products. (all authenticated users)
-
-POST /product - Register a new product (ADMIN access required).
-
-POST /auth/login - Login into the App
-
-POST /auth/register - Register a new user into the App
-```
 
 ## Authentication
 
-The API uses Spring Security for authentication control. The following roles are available:
-
-```
-USER -> Standard user role for logged-in users.
-ADMIN -> Admin role for managing partners (registering new partners).
-```
-To access protected endpoints as an ADMIN user, provide the appropriate authentication credentials in the request header.
-
-Authorization type is Bearer Token.
-
-## Database
-
-The project utilizes [MySQL](https://www.mysql.com/) as the database. 
-
-It is necessary to create a schema named "auth" or change the schema name in the "application.properties" file.
+In the [Firebase console](https://console.firebase.google.com/), option Authentication, Add user 
 
 ## Contributing
 
@@ -81,31 +69,5 @@ When contributing to this project, please follow the existing code style, [commi
 ## Screenshots
 
 Register as Admin Role
-![Register as Admin](https://github.com/kenzor1979/auth-api/blob/main/img/registerAsAdmin.gif?raw=true&sanitize=true)
+![Register as Admin](https://github.com/jonasfschuh/descartebemX/blob/main/images/dark_screen.gif?raw=true&sanitize=true)
 
-Register as User Role
-![Register as User](https://github.com/kenzor1979/auth-api/blob/main/img/registerAsUserRole.gif?raw=true&sanitize=true)
-
-Login
-![Login](https://github.com/kenzor1979/auth-api/blob/main/img/login.gif?raw=true&sanitize=true)
-
-Authorization
-![Authorization](https://github.com/kenzor1979/auth-api/blob/main/img/authorization.gif?raw=true&sanitize=true)
-
-Post
-![post](https://github.com/kenzor1979/auth-api/blob/main/img/post.gif?raw=true&sanitize=true)
-
-MySQL table products
-![MySQL products](https://github.com/kenzor1979/auth-api/blob/main/img/MySQLproducts.png?raw=true&sanitize=true)
-
-MySQL table users
-![MySQL users](https://github.com/kenzor1979/auth-api/blob/main/img/MySQLusers.png?raw=true&sanitize=true)
-=======
-# DescarteBem
-
-Aplicativo para auxiliar a comunidade de cidadãos e entidades na correta destinação de materiais recicláveis.
-
-FURB - Fundação Universidade Regional de Blumenau 2024/1
-Projeto de Software II
-Blumenau / Santa Catarina
->>>>>>> a784d10f7b1bbec259110da8bc7752e8f213d4dc
