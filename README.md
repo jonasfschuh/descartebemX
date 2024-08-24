@@ -68,6 +68,37 @@ When contributing to this project, please follow the existing code style, [commi
 
 ## Screenshots
 
-Register as Admin Role
-![Register as Admin](https://github.com/jonasfschuh/descartebemX/blob/main/images/dark_screen.gif?raw=true&sanitize=true)
+Splash screen
+![Splash screen](https://github.com/jonasfschuh/descartebemX/blob/main/images/splash%20screen.gif?raw=true&sanitize=true)
+
+Main screen
+![Main screen](https://github.com/jonasfschuh/descartebemX/blob/main/images/principal_screen.gif?raw=true&sanitize=true)
+
+Search screen with cupertino icons
+![Main screen](https://github.com/jonasfschuh/descartebemX/blob/main/images/search_screen.gif?raw=true&sanitize=true)
+
+Detail
+![Detail](https://github.com/jonasfschuh/descartebemX/blob/main/images/detail_1.gif?raw=true&sanitize=true)
+
+Detail maps
+![Detail maps](https://github.com/jonasfschuh/descartebemX/blob/main/images/detail_maps.gif?raw=true&sanitize=true)
+
+Details crud
+![Detail crud](https://github.com/jonasfschuh/descartebemX/blob/main/images/detail_edit.gif?raw=true&sanitize=true)
+
+Menu
+![Memu](https://github.com/jonasfschuh/descartebemX/blob/main/images/menu.gif?raw=true&sanitize=true)
+
+Entities
+![Entities](https://github.com/jonasfschuh/descartebemX/blob/main/images/entities.gif?raw=true&sanitize=true)
+
+Dark screen mode
+![Dark screen mode](https://github.com/jonasfschuh/descartebemX/blob/main/images/dark_screen.gif?raw=true&sanitize=true)
+
+Google Firebase Realtime (back-end)
+![Google Firebase Realtime](https://github.com/jonasfschuh/descartebemX/blob/main/images/firebase_realtime.gif?raw=true&sanitize=true)
+
+
+
+
 
